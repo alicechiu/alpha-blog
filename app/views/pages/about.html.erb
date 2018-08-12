@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <body style="background-color:LightGray;">
+  <%= link_to 'Home', root_path %>
+  <h1>Ruby concepts</h1>
+  <h3>Methods</h3>
+  <ul TYPE="square">
+    <li>.each</li>
+    <li>.reverse and .reverse!</li>
+    <li>.push or << (shovel) to add an element to the end of the list.</li>
+    <li>.to_a</li>
+    <li>.select</li>
+    <li>.join</li>
+  </ul>
+  <h3>Arrays</h3>
+  <p>Arrays contain ordered list of elements or objects. It can contain strings, integers, floats, etc...The index of an array starts with 0.
+  <br></br> In other words, if you were to select an element from the array, the first element you see will be called using array[0].</p>
+    <ul type="square">
+    <li>Example 1</li><p>What if I want to retrieve 6 from the array?</p>
+    <code>
+      x = [1,2,3,4,5,6,7,2.0,5.9,9.9]<br>
+      x[5]<br>
+      =>6
+    </code>
+    <br></br>
+    <li>Example 2</li><p>What if I want to retrieve the string "everyday"?</p>
+    <code>
+      z = ["Spike the good pupper", "likes to bark", "at the mailman", "everyday."]<br>
+      z[3]<br>
+      =>"everyday"
+    </code>
+    <br></br>
+    <li>Example 3</li><p>How about iterating through each element?</p>
+    <code>
+      dogs = ["Spike", "Marco", "Lexi", "Kirby"]<br>
+      dogs.each{|d| puts "Hello #{d}"}<br>
+      Hello Spike<br>
+      Hello Marco<br>
+      Hello Lexi<br>
+      Hello Kirby
+    </code>
+  </ul>
+  <h3>Hashes</h3><p>Hashes contains key/ value pairs. It uses curly braces {} and a hash rocket =></p>
+  <ul type="square">
+  <li>Example 1</li>
+  <code>
+    x = {"name"=> "fiona", "breed"=> "king charles cavelier", "hobby"=> "napping all day"}
+  </code>
+  <br></br>
+  <li>Example2</li><p>How about if I want to retrieve the value for breed?</p>
+  <code>
+    x["breed"]<br>
+    king charles cavelier
+  </code>
+  </li>
+  </ul>
+  <p></p>
+  
+  
+  
+  
+</html>
