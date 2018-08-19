@@ -2,8 +2,6 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-#rails image was not showing up in production, by default Rails 4 does not serve assets. https://devcenter.heroku.com/articles/rails-4-asset-pipeline
-config.serve_static_assets = true
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -24,5 +22,8 @@ module AlphaBlog
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    
+    #rails image was not showing up in production, by default Rails 4 does not serve assets. https://devcenter.heroku.com/articles/rails-4-asset-pipeline
+    config.serve_static_assets = true
   end
 end
