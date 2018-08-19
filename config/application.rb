@@ -24,6 +24,6 @@ module AlphaBlog
     config.active_record.raise_in_transactional_callbacks = true
     
     #rails image was not showing up in production, by default Rails 4 does not serve assets. https://devcenter.heroku.com/articles/rails-4-asset-pipeline
-    config.serve_static_assets = true
+    config.serve_static_files = true
   end
 end
