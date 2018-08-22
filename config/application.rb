@@ -25,5 +25,6 @@ module AlphaBlog
     
     #rails image was not showing up in production, by default Rails 4 does not serve assets. https://devcenter.heroku.com/articles/rails-4-asset-pipeline
     config.serve_static_files = true
+    #config.assets.initialize_on_precompile = false
   end
 end
