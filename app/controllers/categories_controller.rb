@@ -8,6 +8,7 @@ class CategoriesController < ApplicationController
   end
   
   def create
+    #raise params.inspect
     @category = Category.new(category_params)
     if @category.save
       flash[:success] = "Category was created successfully"
