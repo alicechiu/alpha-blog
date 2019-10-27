@@ -3,7 +3,6 @@
   <% if logged_in? and current_user.admin? %>
     <div class="row">
       <%= link_to "Edit Category", edit_category_path(@category) %>
-      <%= link_to "Delete Category", delete_category_path(@category) %>
     </div>
   <% end %>
   <%= will_paginate @category_articles %>
